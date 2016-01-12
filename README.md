@@ -32,8 +32,8 @@ $ qbian --export qbian-c9 /path/to/usb/sdcard # this will dump the disk onto the
 ```
 
 ### Download Links
-* [ Pre-built image , not yet provisioned ](https://@link)
-* [ Built image , provisioned ](https://@link)
+* [ Pre-built image , not yet provisioned ](https://s3-eu-west-1.amazonaws.com/qbain-images/qbian-cloud9/qbian-c9-not-provisioned.img)
+* [ Built image , provisioned ](https://s3-eu-west-1.amazonaws.com/qbain-images/qbian-cloud9/qbian-c9-provisioned.img)
 
 ### System details
 * User : qbian
