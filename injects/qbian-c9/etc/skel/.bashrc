@@ -17,7 +17,9 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-export VISUAL=vim
+export EDITOR=vim
 
 export PATH="$HOME/bin:$PATH"
-source ~/.nvm/nvm.sh
+if [ -f "~/.nvm/nvm.sh" ];then
+	source ~/.nvm/nvm.sh
+fi

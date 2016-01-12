@@ -43,14 +43,17 @@ ln -s /usr/sbin/i2cset /home/$USER/bin/i2cset && \
 git clone https://github.com/lurch/rpi-serial-console.git && \
 chmod +x /etc/init.d/* && \
 sed -i "s/{USER}/$USER/g" /etc/sudoers.d/user-perm && \
-/bin/su - $USER -c "cd ~/ && nvm install iojs && nvm alias default iojs && npm i npm -g && npm i forever node-gyp bower grunt-cli -g && cd ~" && \
+/bin/su - $USER -c "cd ~/ && nvm install iojs-3.0.0 && nvm alias default iojs-3.0.0 && npm i npm -g && npm i forever node-gyp bower grunt-cli -g && cd ~" && \
 sed -i "s/{USER}/$USER/g" /etc/init.d/qbian-c9 && \
-# install c9 ide
-/bin/su - $USER -c "cd ~/ && c9-install" && \
+# install c9 ide : https://github.com/c9/core/
+# /bin/su - $USER -c "cd ~/ && c9-install" && \
 /bin/su - $USER -c "git clone https://github.com/trojanspike/qbian-server.git ~/Server" && \
-# Ruby RVM install
-curl -sSL https://rvm.io/mpapis.asc | gpg --import - && \
-curl -sSL https://get.rvm.io | bash -s stable --ruby --with-gems="bundler compass sass haml mustache" && \
+# Ruby RVM install : https://rvm.io/
+## curl -sSL https://rvm.io/mpapis.asc | gpg --import - && \
+## curl -sSL https://get.rvm.io | bash -s stable --ruby --with-gems="bundler compass sass haml mustache" && \
+## usermod -a -G rvm $USER && \
+# /bin/su - $USER -c "curl -sSL https://rvm.io/mpapis.asc | gpg --import -"
+# /bin/su - $USER -c "rvm get stable --auto-dotfiles"
 update-rc.d qbian-c9 defaults && \
 passwd root <<EFO
 $NEW_ROOT_PASS
