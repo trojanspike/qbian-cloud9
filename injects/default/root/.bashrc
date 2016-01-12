@@ -17,7 +17,9 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+export EDITOR=vim
+
+export PATH="$HOME/bin:$PATH"
 if [ -f ~/qbian.conf ];then
 	source ~/qbian.conf
 fi
-
