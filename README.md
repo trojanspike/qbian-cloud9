@@ -26,8 +26,8 @@ $ qbian --export qbian-c9 /path/to/usb/sdcard # this will dump the disk onto the
 ```
 
 ### Download Links
-[ Pre-built image , not yet provisioned ](https://@link)
-[ Built image , provisioned ](https://@link)
+* [ Pre-built image , not yet provisioned ](https://@link)
+* [ Built image , provisioned ](https://@link)
 
 User : qbian
 Pass : raspberry
