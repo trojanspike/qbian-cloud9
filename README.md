@@ -3,8 +3,6 @@
 ### Install the qbian cli
 [ qbain cli ](https://github.com/trojanspike/qbian)
 
-```
-
 ### How to build
 Make sure that the qbian-cli install available on your system.
 - clone the repo https://github.com/trojanspike/qbian-cloud9.git
