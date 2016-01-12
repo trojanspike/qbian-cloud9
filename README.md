@@ -13,7 +13,7 @@ Make sure that the qbian-cli install available on your system.
 - build the qbian-c9 image, using the prev default image as the base image
 - Run the image and let the provisioning run.
 
-```
+```bash
 $ git clone git@github.com:trojanspike/qbian-cloud9.git
 $ cd qbian-cloud9
 $ qbain --create-default && \ # Run this image twice to get configured
