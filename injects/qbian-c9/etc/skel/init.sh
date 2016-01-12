@@ -18,7 +18,7 @@ if [ "$COMMAND" == "start" ];then
 		sleep 7 && clear && \
 		echo -e "Cloud9 IDE not install yet. Install now ? [y/n]" && \
 		read INSTALL
-		if [ -z "$INSATLL" ] && [ "$INSTALL" == "y" ];then
+		if [ "$INSTALL" == "y" ];then
 			echo -e "Install cloud9 IDE , this will take a while to complete. Go chill :)" && sleep 8 && \
 			c9-install
 		fi
