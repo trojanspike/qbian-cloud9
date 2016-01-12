@@ -1,5 +1,7 @@
 # qbian-c9 Cloud9 IDE
 
+Version : 1.0.0
+
 ### Install the qbian cli
 [ qbain cli ](https://github.com/trojanspike/qbian)
 
