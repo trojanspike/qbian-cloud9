@@ -25,8 +25,8 @@ if [ "$IS_DEVICE" == true ]; then
 	# And create a file when the provision has ran, either $(cat ~/release)-qemu or $(cat ~/release)-device
 	# Depending on env
 	# Here's an example of over riding it for when we want to run both provision in device-mode
-	if [ ! -f /qbianProvision/$(cat ~/release)-qemu ];then
-		provision_qemu && touch /qbianProvision/$(cat ~/release)-qemu && provision_device
+	if [ ! -f "/qbianProvision/$(cat /root/release)-qemu" ];then
+		provision_qemu && touch "/qbianProvision/$(cat ~/release)-qemu" && provision_device
 		# Remember to create the provision file
 	else
 		provision_device
