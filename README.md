@@ -20,11 +20,11 @@ $ qbain --create-default && \ # Run this image twice to get configured
 $ qbian up && \ # login and and run ./Provision.sh , it will restart | halt
 $ qbian up && \ # It should auto run the provision and restart | halt. The image is now configured
 $ qbain --create-img qbian-cloud9 "-redir tcp:8080::8080" 2.5G default && \ # Create the new image and inject
-# Provision in qemu
+  # Provision in qemu
 $ qbian --run-img qbian-cloud9 5522 && \ # Start the image in qemu, provision will auto run. Take a while
-# Or you can do it from the raspberry pi - make sure to have ethernet connection.
+  # Or you can do it from the raspberry pi - make sure to have ethernet connection.
 $ qbian --export qbian-c9 /path/to/usb/sdcard # this will dump the disk onto the sd card
-# Put into the raspberry pi & allow to run
+  # Put into the raspberry pi & allow to run
 ```
 
 ### Download Links
