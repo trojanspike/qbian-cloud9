@@ -5,6 +5,10 @@ Version : 1.0.0
 ### Install the qbian cli
 [ qbain cli ](https://github.com/trojanspike/qbian)
 
+<div style="margin:0 auto;">
+![Cloud9 ide](./Cloud-9.png "Cloud9")
+</div>
+
 ### How to build
 Make sure that the qbian-cli install available on your system.
 - clone the repo https://github.com/trojanspike/qbian-cloud9.git
@@ -31,5 +35,7 @@ $ qbian --export qbian-c9 /path/to/usb/sdcard # this will dump the disk onto the
 * [ Pre-built image , not yet provisioned ](https://@link)
 * [ Built image , provisioned ](https://@link)
 
-User : qbian
-Pass : raspberry
+### System details
+* User : qbian
+* Pass : raspberry
+* Built using qemu, pi 1, armv6l
