@@ -6,7 +6,7 @@ Version : 1.0.0
 [ qbain cli ](https://github.com/trojanspike/qbian)
 
 <div style="margin:0 auto;">
-![Cloud9 ide](./Cloud-9.png "Cloud9")
+<img src="https://raw.githubusercontent.com/trojanspike/qbian-cloud9/develop/Cloud-9.png">
 </div>
 
 ### How to build
