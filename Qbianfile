@@ -11,4 +11,5 @@ export consoleOnly=false
 export defaultUpImg=default
 export defaultUpPort=5522
 
-export version=0.1.5
+export useMySSH=false
+
