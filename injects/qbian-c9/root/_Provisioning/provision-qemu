@@ -2,7 +2,7 @@
 source /root/qbian.conf
 
 clear && sleep 4 && \
-echo " Running provision for device environment "
+echo " Running provision for qemu environment "
 sleep 2 && \
 USER="$user" # form qbian.config
 PASS="$userpass" # form qbian.config
