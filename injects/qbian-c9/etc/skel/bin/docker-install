@@ -2,6 +2,10 @@
 
 echo "Installing Docker" && \
 curl -sSL http://downloads.hypriot.com/docker-hypriot_1.8.2-1_armhf.deb > /tmp/docker-hypriot_1.8.2-1_armhf.deb && \
-sudo dpkg -i /tmp/docker-hypriot_1.8.2-1_armhf.deb
+sudo dpkg -i /tmp/docker-hypriot_1.8.2-1_armhf.deb && \
+sudo docker pull hypriot/rpi-node:4.2.4 && sudo docker pull hypriot/rpi-python:2.7 && \
+sudo docker pull resin/rpi-raspbian:wheezy
 
-# Group :: docker
+# Group :: docker left for user to add user to group
+# $ sudo gpasswd -a ${USER} docker
+# reboot system
